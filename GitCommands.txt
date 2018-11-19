@@ -1,0 +1,58 @@
+Windows Git:
+
+git add . (Pour juste ajouter les motifs)
+git commit -m « lol »
+git push origin master
+
+Créer une branche:
+
+git branch «Le nom de la branche  » //Pour créer une branche
+git checkout « le nom de la branche » //Pour push sur ma branche
+
+Pour marge la branche avec master:
+git checkout master //Pour aller sur master branche
+git merge  //Pour marge les branches locales sur la master
+————————————————————————
+Remove old ssh:
+rm -f ~/.ssh
+Control:
+ls -al ~/.ssh
+
+
+GitHub: ETRE DANS LE DOSSIER GITHUB
+Créer ou copier le fichier Github dans le finder:
+Terminal —> go dans dossier —> git clone <link>
+
+Nous montre ce qui est différent entre nous et le cloud:
+git status
+
+
+Ajouter un new file/change:
+git add LE_FILE
+git status: pour voir ce qui a changé
+git commit -m «le message »
+
+Jusqu’à la c’est locké dans notre dossier. 
+Pour le mettre en ligne:
+git push
+
+
+Chez les autres: Pour downloader le file modifié:
+git pull 
+
+
+Pour ajouter tous les fichiers du dossier:
+git add -A && git commit -m "Your Message"
+
+——————
+
+Pour reset hard:
+git log 
+git reset —hard LECODEduLOG
+
+————
+
+Si le truc fait vraiment chier parce qu’il y a des nouveaux commits mais que ta version est meilleure et les plus récents commits ne servent plus à rien:
+git push -f <branch>
+git push -f origin master
+
