@@ -1,3 +1,7 @@
+﻿
+
+ SKIIII$
+
 Windows Git:
 
 git add . (Pour juste ajouter les motifs)
