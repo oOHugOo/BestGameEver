@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 6f;            // The speed that the player will move at.
 
     Vector3 movement;                   // The vector to store the direction of the player's movement.
-    Animator anim;                      // Reference to the animator component.
+    private Animator anim;                      // Reference to the animator component.
     Rigidbody2D playerRigidbody;          // Reference to the player's rigidbody.
     int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
     float camRayLength = 100f;          // The length of the ray from the camera into the scene.
@@ -21,9 +21,9 @@ public class PlayerController : MonoBehaviour
     {
         // Create a layer mask for the floor layer.
         floorMask = LayerMask.GetMask("Floor");
-
-        // Set up references.
         //anim = GetComponent<Animator>();
+        // Set up references.
+        anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Store the input axes.
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
 
         // Move the player around the scene.
         Move(h, v);
@@ -41,7 +41,18 @@ public class PlayerController : MonoBehaviour
         //Turning();
 
         // Animate the player.
-        //Animating(h, v);
+        // Animating(h, v);
+        anim.SetFloat("SpeedX", h);
+        anim.SetFloat("SpeedY", v);
+
+        if (h > 0f || v > 0f || h < 0f || v < 0f) //A la base c'était : (h != 0 || v != 0)
+        {
+            anim.SetBool("Walking", true);
+        }
+        else
+        {
+            anim.SetBool("Walking", false);    
+        }
     }
 
     void Move(float h, float v)
