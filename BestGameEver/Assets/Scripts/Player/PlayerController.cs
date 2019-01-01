@@ -9,18 +9,23 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 6f;            // The speed that the player will move at.
+    /***public float speed = 6f;             // The speed that the player will move at.
+    float camRayLength = 100f;             // The length of the ray from the camera into the scene.
+    Vector3 movement;                      // The vector to store the direction of the player's movement.
+    ***/
 
-    Vector3 movement;                   // The vector to store the direction of the player's movement.
     private Animator anim;                      // Reference to the animator component.
     Rigidbody2D playerRigidbody;          // Reference to the player's rigidbody.
-    int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
-    float camRayLength = 100f;          // The length of the ray from the camera into the scene.
+    //int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
+
+    public float speed;
+    private Vector2 movement;
+    
 
     void Awake()
     {
         // Create a layer mask for the floor layer.
-        floorMask = LayerMask.GetMask("Floor");
+        //floorMask = LayerMask.GetMask("Floor");
         //anim = GetComponent<Animator>();
         // Set up references.
         anim = GetComponent<Animator>();
@@ -31,8 +36,8 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         // Store the input axes.
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
 
         // Move the player around the scene.
         Move(h, v);
@@ -45,7 +50,8 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("SpeedX", h);
         anim.SetFloat("SpeedY", v);
 
-        if (h > 0f || v > 0f || h < 0f || v < 0f) //A la base c'était : (h != 0 || v != 0)
+        //if (h > 0f || v > 0f || h < 0f || v < 0f) //A la base c'était : (h != 0 || v != 0)
+        if (h !=0 || v!=0)
         {
             anim.SetBool("Walking", true);
         }
@@ -57,14 +63,15 @@ public class PlayerController : MonoBehaviour
 
     void Move(float h, float v)
     {
-        // Set the movement vector based on the axis input.
-        movement.Set(h, v, 0f);
+       // Set the movement vector based on the axis input.
+       // movement.Set(h, v, 0f);
+        movement.Set(h, v);
 
         // Normalise the movement vector and make it proportional to the speed per second.
         movement = movement.normalized * speed * Time.deltaTime;
 
         // Move the player to it's current position plus the movement.
-        playerRigidbody.MovePosition(transform.position + movement);
+        playerRigidbody.MovePosition(playerRigidbody.position + movement);
     }
 
     /*
