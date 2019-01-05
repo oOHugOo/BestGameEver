@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
 
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         lastPosition = transform.position;
         
    
@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        speed = (transform.position - lastPosition);
+        speed = transform.position - lastPosition;
         lastPosition = transform.position;
         //Debug.Log("speedX = "+speed.x + " /speedY = " +speed.y +"/ speedZ = "+speed.z );
         

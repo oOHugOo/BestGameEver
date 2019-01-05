@@ -2335,6 +2335,7 @@ GameObject:
   - component: {fileID: 1866097455}
   - component: {fileID: 1866097452}
   - component: {fileID: 1866097456}
+  - component: {fileID: 1866097457}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -2455,6 +2456,22 @@ CapsuleCollider2D:
   m_Offset: {x: -4.93, y: 6.56}
   m_Size: {x: 2.72, y: 5.2}
   m_Direction: 0
+--- !u!58 &1866097457
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866097450}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5, y: 6.4}
+  serializedVersion: 2
+  m_Radius: 15
 --- !u!1 &1934443505
 GameObject:
   m_ObjectHideFlags: 0
@@ -2534,9 +2551,10 @@ GameObject:
   - component: {fileID: 1936863752}
   - component: {fileID: 1936863755}
   - component: {fileID: 1936863756}
-  - component: {fileID: 1936863757}
   - component: {fileID: 1936863758}
+  - component: {fileID: 1936863757}
   - component: {fileID: 1936863760}
+  - component: {fileID: 1936863759}
   m_Layer: 0
   m_Name: SkeletonMob
   m_TagString: Untagged
@@ -2683,9 +2701,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b02c05e580a4cc14caefaf85eae12108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrollingRangeX: 10
-  patrollingRangeY: 10
-  speed: 5
+  patrollingRangeX: 15
+  patrollingRangeY: 15
+  speed: 3
+--- !u!114 &1936863759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936863751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4feb03753ab80f4794b6fa82af2ae1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chasing: 0
 --- !u!114 &1936863760
 MonoBehaviour:
   m_ObjectHideFlags: 0

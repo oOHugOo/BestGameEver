@@ -21,7 +21,7 @@ public class EnemyAttack : MonoBehaviour
     {
         // Setting up the references.
         player = GameObject.FindGameObjectWithTag("Player");
-        Debug.Log(player);
+        //Debug.Log(player);
         //playerHealth = player.currentHealth;
         characterHealth = player.GetComponent<CharacterHealth>();
         //enemyHealth = GetComponent<EnemyHealth>();
@@ -31,15 +31,15 @@ public class EnemyAttack : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Ca collide");
-        Console.WriteLine("its colliding.");
+        //Debug.Log("Ca collide");
+        
         // If the entering collider is the player...
-        if (other.gameObject == player)
+        if ((other.gameObject == player) & (other.GetType()== typeof(CapsuleCollider2D)))
         {
             // ... the player is in range.
             playerInRange = true;
-            Debug.Log("Ca touche");
-            Console.WriteLine("The variable is set to true.");
+            //Debug.Log("Ca touche");
+            
         }
     }
 
@@ -51,8 +51,8 @@ public class EnemyAttack : MonoBehaviour
         {
             // ... the player is no longer in range.
             playerInRange = false;
-            Debug.Log("Ca sort");
-            Console.WriteLine("The variable is set to false.");
+            //Debug.Log("Ca sort");
+            
         }
     }
 
