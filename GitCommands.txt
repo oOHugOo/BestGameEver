@@ -1,8 +1,13 @@
 ﻿Windows Git:
-
+git add * (pour tout push)
 git add . (Pour juste ajouter les motifs)
 git commit -m « lol »
 git push origin master
+
+
+//faire ces deux commandes à la suite pour pull hard et écraser notre version
+git fetch -- all
+git reset -- hard origin/master
 
 Créer une branche:
 

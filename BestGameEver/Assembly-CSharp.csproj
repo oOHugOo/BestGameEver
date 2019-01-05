@@ -87,6 +87,7 @@
     <Compile Include="Assets\Anima2D\Scripts\SpriteMeshInstance.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemy\Patrolling.cs" />
     <Compile Include="Assets\Scripts\Player\CharacterHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />

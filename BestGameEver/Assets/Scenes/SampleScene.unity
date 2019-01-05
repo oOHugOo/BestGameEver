@@ -2452,7 +2452,7 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.98, y: 6.56}
+  m_Offset: {x: -4.93, y: 6.56}
   m_Size: {x: 2.72, y: 5.2}
   m_Direction: 0
 --- !u!1 &1934443505
@@ -2536,6 +2536,7 @@ GameObject:
   - component: {fileID: 1936863756}
   - component: {fileID: 1936863757}
   - component: {fileID: 1936863758}
+  - component: {fileID: 1936863760}
   m_Layer: 0
   m_Name: SkeletonMob
   m_TagString: Untagged
@@ -2553,7 +2554,7 @@ Animator:
   m_GameObject: {fileID: 1936863751}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 17cccd7318df04df984ef18763524dc4, type: 2}
+  m_Controller: {fileID: 9100000, guid: df29dc6e1dca14c25a59dec1a3ddc6d7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -2685,6 +2686,18 @@ MonoBehaviour:
   patrollingRangeX: 10
   patrollingRangeY: 10
   speed: 5
+--- !u!114 &1936863760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936863751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7275e405efec6d42bf1dc78f8be258c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1948856129
 GameObject:
   m_ObjectHideFlags: 0
