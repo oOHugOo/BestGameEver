@@ -5,16 +5,19 @@ using System;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public float timeBetweenAttacks = 1f;     // The time in seconds between each attack.
+    public float timeBetweenAttacks = 1f;      // The time in seconds between each attack.
     public int attackDamage = 1;               // The amount of health taken away per attack.
 
 
-    //Animator anim;                              // Reference to the animator component.
+    //Animator anim;                            // Reference to the animator component.
     GameObject player;                          // Reference to the player GameObject.
-    CharacterHealth characterHealth;                  // Reference to the player's health.
-    //EnemyHealth enemyHealth;                    // Reference to this enemy's health.
-    bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
+    CharacterHealth characterHealth;            // Reference to the player's health.
+    //EnemyHealth enemyHealth;                  // Reference to this enemy's health.
+    public bool playerInRange;                         // Whether player is within the trigger collider and can be attacked.
     float timer;                                // Timer for counting up to the next attack.
+
+    EnemyPatrolling enemyPatrolling;            // We will need the speed of the mob = "Enemy"
+    EnemyChasing enemyChasing;
 
 
     void Start() //avant c'était Awake
@@ -26,6 +29,9 @@ public class EnemyAttack : MonoBehaviour
         characterHealth = player.GetComponent<CharacterHealth>();
         //enemyHealth = GetComponent<EnemyHealth>();
         //anim = GetComponent<Animator>();
+
+        enemyPatrolling = GetComponent<EnemyPatrolling>();
+        enemyChasing = GetComponent<EnemyChasing>();
     }
 
 
@@ -34,7 +40,7 @@ public class EnemyAttack : MonoBehaviour
         //Debug.Log("Ca collide");
         
         // If the entering collider is the player...
-        if ((other.gameObject == player) & (other.GetType()== typeof(CapsuleCollider2D)))
+        if ((other.gameObject == player) & (other.GetType() == typeof(CapsuleCollider2D)))
         {
             // ... the player is in range.
             playerInRange = true;
@@ -47,11 +53,14 @@ public class EnemyAttack : MonoBehaviour
     void OnTriggerExit2D(Collider2D other)
     {
         // If the exiting collider is the player...
-        if (other.gameObject == player)
+        if ((other.gameObject == player) & (other.GetType() == typeof(CapsuleCollider2D)))
         {
-            // ... the player is no longer in range.
+            // ... the player is no longer in range for attacking.
             playerInRange = false;
             //Debug.Log("Ca sort");
+
+            //But it should still be in range for chasing
+            enemyChasing.chasing = true;
             
         }
     }
@@ -82,6 +91,12 @@ public class EnemyAttack : MonoBehaviour
     {
         // Reset the timer.
         timer = 0f;
+        // the enemy stop to run in order to attack...
+        enemyPatrolling.speed = 0f;
+        // ... he is therefore not chasing anymore
+        enemyChasing.chasing = false;
+
+        //we need to call attackAnimation.
 
         // If the player has health to lose...
         if (characterHealth.currentHealth > 0)

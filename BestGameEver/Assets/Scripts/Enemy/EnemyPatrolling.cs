@@ -31,6 +31,7 @@ public class EnemyPatrolling : MonoBehaviour
     private Animator anim;
     EnemyChasing enemyChasing;
     bool chasing;
+    EnemyAttack enemyAttack;
 
 
     // Start is called before the first frame update
@@ -51,6 +52,7 @@ public class EnemyPatrolling : MonoBehaviour
         anim = GetComponent<Animator>();
         enemyChasing = GetComponent<EnemyChasing>();
         chasing = enemyChasing.chasing;
+        enemyAttack = GetComponent<EnemyAttack>();
 
 
     }
@@ -58,6 +60,7 @@ public class EnemyPatrolling : MonoBehaviour
 
     void isPatrolling()
     {
+        speed = 4f;
         anim.enabled = true;
         patrolPointDir = currentPatrolPoint - transform.position;
         transform.Translate(patrolPointDir.normalized * Time.deltaTime * speed);
@@ -104,8 +107,8 @@ public class EnemyPatrolling : MonoBehaviour
         // updtae boolean chasing from EnemeyChasing script (or class)
         chasing = enemyChasing.chasing;
         
-        // if not taking a break during the patrol, nor chasing
-        if (pauseTimer <= 0f & chasing == false) {
+        // if not taking a break during the patrol, nor chasing, nor in range for attack
+        if (pauseTimer <= 0f & chasing == false & enemyAttack.playerInRange == false) {
                 isPatrolling();
         }
         else

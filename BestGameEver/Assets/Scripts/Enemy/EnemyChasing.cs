@@ -8,13 +8,17 @@ public class EnemyChasing : MonoBehaviour
     GameObject player;
     public bool chasing = false;
     Vector2 chasingDir;
-    float speed = 8;
+
+    EnemyPatrolling enemyPatrolling;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         anim = GetComponent<Animator>();
+        enemyPatrolling = GetComponent<EnemyPatrolling>();
+        //speed = enemyPatrolling.speed;
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -40,11 +44,13 @@ public class EnemyChasing : MonoBehaviour
 
     void isChasing ()
     {
+
+        enemyPatrolling.speed = 8f;
         anim.enabled = true;
         anim.speed =  2.5f * 1.0f;
         chasingDir = player.transform.position - transform.position;
-        transform.Translate(chasingDir.normalized * Time.deltaTime * speed);
-
+        transform.Translate(chasingDir.normalized * Time.deltaTime * enemyPatrolling.speed);
+        
     }
 
     // Update is called once per frame
