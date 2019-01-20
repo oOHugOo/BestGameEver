@@ -53,6 +53,7 @@ public class EnemyPatrolling : MonoBehaviour
         enemyChasing = GetComponent<EnemyChasing>();
         chasing = enemyChasing.chasing;
         enemyAttack = GetComponent<EnemyAttack>();
+        anim.SetBool("Attacking", false); 
 
 
     }
