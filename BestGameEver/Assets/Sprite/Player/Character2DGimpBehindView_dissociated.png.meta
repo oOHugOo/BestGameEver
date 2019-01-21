@@ -1,7 +1,21 @@
 fileFormatVersion: 2
 guid: dd34aed108cebd849b8bd046810ba514
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Character2DGimpBehindView_dissociated_0
+    21300002: Character2DGimpBehindView_dissociated_1
+    21300004: Character2DGimpBehindView_dissociated_2
+    21300006: Character2DGimpBehindView_dissociated_3
+    21300008: Character2DGimpBehindView_dissociated_4
+    21300010: Character2DGimpBehindView_dissociated_5
+    21300012: Character2DGimpBehindView_dissociated_6
+    21300014: Character2DGimpBehindView_dissociated_7
+    21300016: Character2DGimpBehindView_dissociated_9
+    21300018: Character2DGimpBehindView_dissociated_10
+    21300020: Character2DGimpBehindView_dissociated_11
+    21300022: Character2DGimpBehindView_dissociated_12
+    21300024: Character2DGimpBehindView_dissociated_13
+    21300026: Character2DGimpBehindView_dissociated_14
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +83,300 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 360
+        width: 126
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e88e63837e8aed4fa0d9678be24c207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 543
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd77474b7af90d4da144ba8223db57e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 476
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616ff90f00bbca74a96864794852416d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_3
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 546
+        width: 243
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f4c626d6bb2de43b9ba354266bdb36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_4
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 466
+        width: 141
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11355bef3739e7439330d5722d44140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_5
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 264
+        width: 288
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f2f19d4c4f6d946888911af601e268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_6
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 272
+        width: 136
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e875e13906ce22f4eb0e9fa64bac48be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_7
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 450
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd4175c429ba1b4a84adc5f219b2fbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_9
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 163
+        width: 115
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb2a0cc92f64ea498448d39b6315f98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_10
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 132
+        width: 116
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01db54307a8c90f45985f743db46c8db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 163
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e715bfd63e1de814eb3fbbcfa00dcc04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_12
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 175
+        width: 80
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1298db5e558debb4b9f08a769e2f89f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_13
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 9
+        width: 139
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9688de4070e2b4f45a74d7f78d7b91d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBehindView_dissociated_14
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 4
+        width: 139
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17818de79f198ed4d9b012d559f9c157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
