@@ -1,7 +1,21 @@
 fileFormatVersion: 2
 guid: 9f0917e2b047a5b459e4ef427fa9a508
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Character2DGimpBackDiagonalLeftView_dissociated_0
+    21300002: Character2DGimpBackDiagonalLeftView_dissociated_1
+    21300004: Character2DGimpBackDiagonalLeftView_dissociated_2
+    21300006: Character2DGimpBackDiagonalLeftView_dissociated_3
+    21300008: Character2DGimpBackDiagonalLeftView_dissociated_4
+    21300010: Character2DGimpBackDiagonalLeftView_dissociated_5
+    21300012: Character2DGimpBackDiagonalLeftView_dissociated_6
+    21300014: Character2DGimpBackDiagonalLeftView_dissociated_7
+    21300016: Character2DGimpBackDiagonalLeftView_dissociated_8
+    21300018: Character2DGimpBackDiagonalLeftView_dissociated_9
+    21300020: Character2DGimpBackDiagonalLeftView_dissociated_10
+    21300022: Character2DGimpBackDiagonalLeftView_dissociated_11
+    21300024: Character2DGimpBackDiagonalLeftView_dissociated_12
+    21300026: Character2DGimpBackDiagonalLeftView_dissociated_13
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +83,300 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_0
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 515
+        width: 349
+        height: 384
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fa371868048b24aa6adec1430b6ec1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_1
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 450
+        width: 111
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc05076aa12b104e876959acdc416ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 357
+        width: 184
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2867d9ec8a3234c86a048a6da967d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_3
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 275
+        width: 193
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b6a77c2d3255194295788ccc00ee97f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_4
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 309
+        width: 80
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e11103cef0c83c4d8b7914cce673b8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 185
+        width: 148
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f70f2b15dc0b44db10b00f59b31552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_6
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 253
+        width: 54
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 306ace4fedda31f41a73243f4ecd49f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 103
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d5db296f9569d4c9bb3e280fabee54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_8
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 116
+        width: 121
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa7a8eb7415e784880c59dcff3589da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_9
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 135
+        width: 121
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77bbf00a9e83c44d947bc2148e70471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_10
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 156
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd7e1392d1d0ab4e85f395f47607b73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 72
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d557d430aaefe4ab8773b9dc431ad0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 0
+        width: 119
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f92bf001a21ce498c3c5bd92969c2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character2DGimpBackDiagonalLeftView_dissociated_13
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 10
+        width: 120
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaf776fc216bc541a6366e995dfe4a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
